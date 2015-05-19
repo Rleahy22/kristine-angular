@@ -1,0 +1,44 @@
+<div class="social-nav md-accent" layout="row" layout-align="end end">
+    <div class="social-nav-container" layout="row" layout-align="end center">
+        <md-list layout="row" layout-align="end center" class="social-nav-list">
+            <md-list-item class="social-link">
+                <a href="https://twitter.com/KristineLeahy" target="_blank">
+                    <md-icon md-svg-src="public/images/twitter.svg"></md-icon>
+                </a>
+            </md-list-item>
+            <md-list-item class="social-link">
+                <a href="https://twitter.com/KristineLeahy" target="_blank">
+                    <md-icon md-svg-src="public/images/instagram.svg" class="social-image"></md-icon>
+                </a>
+            </md-list-item>
+            <md-list-item class="social-link">
+                <a href="https://twitter.com/KristineLeahy" target="_blank">
+                    <md-icon md-svg-src="public/images/facebook.svg" class="social-image"></md-icon>
+                </a>
+            </md-list-item>
+        </md-list>
+    </div>
+</div>
+<md-content class="main-nav">
+    <md-list layout="row" class="nav-list" layout-align="center center">
+        <md-list-item id="logo-item">
+            <img src="public/images/logo.png" id="logo"></img>
+        </md-list-item>
+        <md-list-item>
+            <a ui-sref="layout.home">HOME</a>
+        </md-list-item>
+        <md-list-item>
+            <a ui-sref="layout.bio">BIO</a>
+        </md-list-item>
+        <md-list-item>
+            <a ui-sref="layout.video">VIDEO</a>
+        </md-list-item>
+        <md-list-item>
+            <a ui-sref="layout.social">SOCIAL</a>
+        </md-list-item>
+        <md-list-item>
+            <a ui-sref="layout.contact">CONTACT</a>
+        </md-list-item>
+    </md-list>
+</md-content>
+<ui-view></ui-view>
