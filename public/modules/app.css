@@ -5,8 +5,11 @@ body {
   height: 100%;
 }
 .social-nav {
+  position: fixed;
+  top: 0;
   background-color: #000000;
   height: 6%;
+  width: 100%;
 }
 .social-nav .social-nav-container {
   width: 60%;
@@ -25,7 +28,10 @@ body {
   border-radius: 6px;
 }
 .main-nav {
+  position: fixed;
+  top: 6%;
   height: 12%;
+  width: 100%;
 }
 .main-nav .nav-list {
   height: 100%;
@@ -51,7 +57,11 @@ body {
 }
 .content-container,
 .content-alt {
+  position: fixed;
+  top: 18%;
+  overflow: scroll;
   height: 100%;
+  width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
 }

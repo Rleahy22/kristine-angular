@@ -21,7 +21,8 @@ function config($locationProvider, $stateProvider, $urlRouterProvider) {
         })
         .state('layout.video', {
             url: 'video',
-            templateUrl: 'public/modules/video.html'
+            templateUrl: 'public/modules/video.html',
+            controller: 'VideoCtrl as video'
         })
         .state('layout.social', {
             url: 'social',
