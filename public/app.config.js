@@ -26,11 +26,16 @@ function config($locationProvider, $stateProvider, $urlRouterProvider) {
         })
         .state('layout.social', {
             url: 'social',
-            templateUrl: 'public/modules/social.html'
+            templateUrl: 'public/modules/social.html',
+            controller: 'SocialCtrl as social'
         })
         .state('layout.contact', {
             url: 'contact',
             templateUrl: 'public/modules/contact.html'
+        })
+        .state('layout.links', {
+            url: 'links',
+            templateUrl: 'public/modules/links.html'
         })
 
     $urlRouterProvider.otherwise("/");

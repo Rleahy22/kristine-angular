@@ -38,14 +38,18 @@ body {
   width: 60%;
   margin: auto;
 }
-.main-nav .nav-list #logo-item {
-  height: 100%;
-  margin-right: 5%;
+.main-nav .nav-list #logo-item h2 {
+  font-size: 1.8vw;
 }
-.main-nav .nav-list #logo-item #logo {
-  width: 100%;
+.main-nav .nav-list #logo-item #logo-kristine {
+  margin: -5% 0 -5% -50%;
+}
+.main-nav .nav-list #logo-item #logo-leahy {
+  margin: -5% 0 -5% 0;
+  color: silver;
 }
 .main-nav .nav-list a {
+  font-size: 1.3vw;
   text-decoration: none;
   color: #000000;
 }
