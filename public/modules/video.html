@@ -1,11 +1,12 @@
 <div class="content-alt">
     <md-content class="main" layout="row">
-        <md-list layout="column">
-                <md-list-item ng-repeat="video in video.videos">
-                    <img ng-src="{{video.imageUrl}}" ng-if="!video.play" ng-click="video.play = true">
-                    <iframe ng-if="video.play" iframe width="400" height="225" ng-src="{{video.url}}" frameborder="0" allowfullscreen="" class="youtube"></iframe>
-                    <p>{{video.title}}</p>
-                </md-list-item>
-        </md-list>
+        <div class="video-container" layout="row" layout-wrap>
+                <div flex-sm="90" flex-gt-sm="40" class="video-item" ng-class="{'open-video-div': video.play}" layout="column" layout-align="center center" ng-repeat="video in video.videos">
+                    <img ng-hide="video.play" src="public/images/youtube_button.png" class="youtube-button" ng-click="video.play = true">
+                    <img class="video-image" ng-src="{{video.imageUrl}}" ng-if="!video.play" ng-click="video.play = true">
+                    <iframe ng-if="video.play" iframe height="66%" width="100%" ng-src="{{video.url}}" frameborder="0" allowfullscreen="" class="youtube"></iframe>
+                    <div class="video-title" ng-class="{'video-open' : video.play}">{{video.title}}</div>
+                </div>
+        </div>
     </md-content>
 </div>
